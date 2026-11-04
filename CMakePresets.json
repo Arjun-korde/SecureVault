@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "Qt",
+      "hidden": true,
+      "cacheVariables": { "CMAKE_PREFIX_PATH": "$env{QTDIR}" }
+    },
+    {
+      "name": "Qt-Debug",
+      "inherits": "Qt",
+      "generator": "Ninja",
+      "architecture": { "strategy": "external", "value": "x64" },
+      "binaryDir": "${sourceDir}/out/build/debug",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    },
+    {
+      "name": "Qt-Release",
+      "inherits": "Qt",
+      "generator": "Ninja",
+      "architecture": { "strategy": "external", "value": "x64" },
+      "binaryDir": "${sourceDir}/out/build/release",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    }
+  ]
+}

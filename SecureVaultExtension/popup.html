@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            padding: 14px;
+            width: 260px;
+            color: #1f2937;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin: 0 0 8px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0 0 16px;
+            font-size: 13px;
+            color: #374151;
+            line-height: 1.4;
+        }
+
+        .site {
+            font-weight: 600;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+
+        button {
+            font-size: 13px;
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #saveBtn {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        #cancelBtn {
+            background-color: #e5e7eb;
+            color: #111827;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Save password?</h3>
+    <p>
+        Do you want to save the password?
+    </p>
+
+    <div class="actions">
+        <button id="cancelBtn">Cancel</button>
+        <button id="saveBtn">Save</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

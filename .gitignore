@@ -1,0 +1,34 @@
+# Build output
+out/
+build/
+cmake-build-*/
+
+# Visual Studio / IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Machine-specific CMake presets
+CMakeUserPresets.json
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt.user
+
+# Local databases and secrets
+*.db
+*.sqlite
+*.sqlite3
+*.key
+*.pem
+.env
+
+# Extension / Node
+node_modules/
+dist/
+
+# Logs (native host logs can contain sensitive data)
+*.log
