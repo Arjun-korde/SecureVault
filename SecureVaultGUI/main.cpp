@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     if (!DatabaseManager::instance().initialize()) {
-        qDebug() << "error occured while initializing the database";
+        qDebug() << "Error occured while initializing the database";
         return 0;
     }
 
